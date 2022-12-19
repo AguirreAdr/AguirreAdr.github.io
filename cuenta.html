@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Components</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://kit.fontawesome.com/34dfa49f0c.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="recursos/icon.png">
+</head>
+<body>
+    <header>
+        <p></p>
+        <span class="spana"><a href="cuenta.html">Iniciar Sesión | Registrarse</a></span>
+        <span class="logo">
+            <img class="img" src="recursos/logo.png"/>
+        </span>
+        <nav>
+            <ul>
+                <li>
+                    <a class="link" href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="link" href="tienda.html">Tienda</a>
+                </li>
+                <li>
+                    <a class="link" href="acerca.html">Acerca</a>
+                </li>
+                <li>
+                    <a class="link" href="contacto.html">Contáctanos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <img class="imgp" src="recursos/header.jpg"/>
+    <div class="content">
+        <div class="contact-form">
+            <h3>Iniciar Sesión</h3>
+            <form method="POST" action="cuenta.html">
+                <fieldset>
+                    <legend>Ingrese sus datos para iniciar sesión</legend>
+                    <p>
+                        <label for="Usuario">Usuario</label>
+                        <input type="text" name="usuario" id="usuario" placeholder="Escriba su usuario" required/>
+                    </p>
+                    <p>
+                        <label for="contraseña">Contraseña</label>
+                        <input type="password" name="contra" id="contra" placeholder="Escriba su contraseña"required />
+                    </p>
+                    <p class="button">
+                        <button type="submit">Enviar</button>
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="content">
+        <div class="contact-form">
+            <h3>Registrarse</h3>
+            <form method="POST" action="cuenta.html">
+                <fieldset>
+                    <legend>Ingrese sus datos para registar su usuario</legend>
+                    <p>
+                        <label for="Nombre">Nombres</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Escriba sus nombres completos." required
+                        required pattern="[A-Za-z]+" />
+                    </p>
+                    <p>
+                        <label for="Apellidos">Apellidos</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Escriba sus apellidos." required 
+                        required pattern="[A-Za-z]+" />
+                    </p>
+                    <p>
+                        <label for="Teléfono">Teléfono</label>
+                        <input type="number" name="teléfono" id="teléfono" placeholder="Escriba su telefono." required
+                        required pattern="[0-9]+" max="10"/>
+                    </p>
+                    <p>
+                        <label for="Correo">Correo</label>
+                        <input type="email" name="correo" id="correo" placeholder="Escriba su correo." required />
+                    </p>
+                    <p>
+                        <label for="Ciudad">Ciudad</label>
+                        <input type="text" name="Ciudad" id="Ciudad" placeholder="Escriba su Ciudad" required 
+                        required pattern="[A-Za-z]+" />
+                    </p>
+                    <p>
+                        <label for="Direccion">Direccion</label>
+                        <input type="text" name="direccion" id="direccion" placeholder="Escriba su direccion" required />
+                    </p>
+                    <fieldset>
+                        <legend>Datos para iniciar sesión.</legend>
+                        <p>
+                            <label for="Usuario">Usuario</label>
+                            <input type="text" name="usuario" id="usuario" placeholder="Escriba su usuario" required/>
+                        </p>
+                        <p>
+                            <label for="contraseña">Contraseña</label>
+                            <input type="password" name="contra" id="contra" placeholder="Escriba su contraseña"required />
+                        </p>
+                    </fieldset>
+                    <p class="button">
+                        <button type="submit">Enviar</button>
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a>
+                    <img src="recursos/logo.png" alt="Logo de PC Components">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>INFORMACIÓN DE CONTACTO</h2>
+            <p>Somos una compañía apasionada en lo que hacemos: brindar una excelente atención al cliente, asesoría de primera y venta de productos informáticos de altísima calidad.            </p>
+            <p>Guayaquil - Ecuador</p>
+            <p>Dirección: Av. Luis Plaza Dañin 820 y Miguel H. Alcivar</p>
+            <p>Teléfonos:  04-6042287 - 0998323437</p>
+            <p>0992042462</p>
+        </div>
+        <div class="box">
+            <h2>NUESTRAS REDES</h2>
+            <div class="red-social">
+                <a href="https://facebook.com" class="fa fa-facebook"></a>
+                <a href="https://instagram.com" class="fa fa-instagram"></a>
+                <a href="https://twitter.com" class="fa fa-twitter"></a>
+                <a href="https://youtube.com" class="fa fa-youtube"></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy;2022<b> PC Components</b> - Todos los Derechos Reservados.</small>
+        <img src="recursos/payments.png" alt="payments">
+    </div>
+</footer>
+</html>
